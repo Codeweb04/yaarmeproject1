@@ -6,7 +6,7 @@ html, body{
 header {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     position:sticky;
     top: 0;
 }
@@ -25,9 +25,9 @@ header input {
 }
 
 #ym-logo {
-    position: relative;
+    position: absolute;
     left: 40%;
-    bottom: 530px;
+    bottom: 490px;
 }
 
 .basic-info {
@@ -112,5 +112,7 @@ footer {
 }
 
 .footer-container {
-    margin: 10px 0px;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    bottom: 15px;
 }
