@@ -1,0 +1,55 @@
+html{
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    position:sticky;
+    top: 0;
+}
+
+header input {
+    width: 100%;
+}
+
+#top-section {
+    align-items: center;
+    justify-content: center;
+}
+#bg {
+    width: 100%;
+    height: auto;
+}
+
+#ym-logo {
+    position: relative;
+    left: 40%;
+    bottom: 600px;
+}
+
+.basic-info {
+    padding-top: 3rem;
+    width: 100%;
+    position: relative;
+    bottom: 250px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.basic-info button {
+    font-size: 1.2em;
+    border-radius: 25px;
+    border-color: blue;
+    background-color: white;
+    color: blue;
+    padding: .2em .7em;
+}
+
+.employer-number {
+    display: flex;
+    justify-content: center;
+}
