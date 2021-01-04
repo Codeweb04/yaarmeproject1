@@ -56,6 +56,11 @@ header input {
     justify-content: space-between;
 }
 
+.post-img {
+    margin: auto;
+
+}
+
 .site-link {
     display: flex;
     flex-direction: column;
