@@ -58,6 +58,8 @@ header input {
 
 .post-img {
     margin: 0 auto;
+    justify-self: auto;
+    text-align: center;
 
 }
 
