@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <script defer src="script.js"></script>
+    <title>YaarMeProject</title>
 </head>
 <body>
     <header>
-        <img src="./images/profile-logo.jpg" alt="profile-logo" height="30" width="auto">
+        <img src="./images/profile-logo.jpg" alt="profile-logo" height="50" width="auto">
         <input type="text" name="search-bar" placeholder="&#128269; Search">
-        <img src="./images/msg-logo.png" alt="msg-logo" height="30" width="auto">
+        <img src="./images/msg-logo.png" alt="msg-logo" height="50" width="auto">
     </header>
     <section id="top-section">
-        <div>
-            <img id="bg" src="./images/background.jpg" alt="bg-img" height="200px" width="auto">
-              
-        </div>
         <div class="basic-info">
+            <img id="ym-logo" src="./images/Yaarme-logo.png" alt="yaar-me-logo" height="100">
             <h3>YaarMe</h3>
             <p>Information Technology and Services . Raipur . 125 followers</p>
             <button>+ Follow</button>
@@ -26,14 +24,14 @@
             <p style="margin: .3em;">1 employer on Linkedin</p>
             </div>
         </div>
-        <img id="ym-logo" src="./images/Yaarme-logo.png" alt="yaar-me-logo" height="100">
+        
     </section>
     <section>
         <h3>About us</h3>
         <hr>
-        <p style="height: 50px; overflow: hidden;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, architecto ea. Eius eos beatae, assumenda nostrum porro odio omnis, quaerat amet quasi illum totam! Ipsam numquam quidem placeat eum quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, fugit quasi? Porro totam nobis molestias ad. Totam aperiam vel repellat in minima dicta quae. Iusto harum porro quia nihil natus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet corporis asperiores eum officiis ad non nostrum magnam placeat libero quos praesentium in, aspernatur quasi aperiam vitae. Quidem, mollitia neque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus numquam delectus repellat assumenda provident eum deserunt eaque commodi dignissimos eos deleniti laboriosam at debitis ad voluptate cum non, repudiandae incidunt.</p>
-        <a href="#" onclick="showmore()" style="text-decoration: none;">See More</a>
-        <hr>
+        <p class="post-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, architecto ea. Eius eos beatae, assumenda nostrum porro odio omnis, quaerat amet quasi illum totam! Ipsam numquam quidem placeat eum quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, fugit quasi? Porro totam nobis molestias ad. Totam aperiam vel repellat in minima dicta quae. Iusto harum porro quia nihil natus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet corporis asperiores eum officiis ad non nostrum magnam placeat libero quos praesentium in, aspernatur quasi aperiam vitae. Quidem, mollitia neque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus numquam delectus repellat assumenda provident eum deserunt eaque commodi dignissimos eos deleniti laboriosam at debitis ad voluptate cum non, repudiandae incidunt. </p>
+        <a href="#" onclick="showMore(event)" class="read-more-btn">Read More</a>
+        
         <p>Headquarters</p>
         <h4>Raipur</h4>
         <p>Company size</p>
@@ -61,12 +59,13 @@
                     <p style="margin: 0; padding: 0;">5mo</p>
                 </div>
             </div>
-            <img src="./images/3-dots.jpg" alt="menu-dots" height="15px" style="margin-right: 5px;">
+            <img src="./images/3-dots.jpg" alt="menu-dots" height="15px">
         </div>
         
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sint, doloribus recusandae vel a, inventore fuga rerum porro molestias quidem eveniet quae, totam accusantium enim. Labore hic praesentium dolor voluptas. <a href="#" style="text-decoration: none; color: gray;"> &emsp; ...more</a></p>
-        <img src="./images/Yaarme-logo.png" alt="yaar-me-logo">
+        <p class="post-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sint, doloribus recusandae vel a, inventore fuga rerum porro molestias quidem eveniet quae, totam accusantium enim. Labore hic praesentium dolor voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolor et? Esse, nisi! Ullam nam eligendi aperiam, blanditiis voluptate veritatis magnam molestias explicabo itaque nesciunt maxime a, perferendis rem eaque! </p>
+        <a href="#" onclick="showMore(event)" class="read-more-btn"> &emsp; ...more</a>
+        <img src="./images/Yaarme-logo.png"  alt="yaar-me-logo">
         <div class="site-link">
             <b>YaarMe</b>
             <a href="https://yaarme.com/" style="text-decoration: none">yaarme.com</a>
@@ -75,20 +74,20 @@
             <div class="post-footer-container">
                 <img height="25px" src="./images/like-logo.png" alt="like logo">
                 <img height="25px" src="./images/heart-logo.png" alt="heart-logo">
-                <p  style="margin: 0;">40</p>
+                <p class="likes-counter" style="margin: 0;">40</p>
             </div>
             <p style="margin: 0">3 comments</p>
         </div>
         <div class="action-container">
-            <div style="display: flex;">
+            <div class="like-btn" onclick="likes()" style="display: flex; cursor: pointer;">
                 <img height="25px" src="./images/like-btn.png" alt="like-btn">
                 <p style="margin: 0;">Like</p>
             </div>
-            <div style="display: flex;">
+            <div style="display: flex; cursor: pointer;">
                 <img height="25px" src="./images/cmnt-logo.png" alt="cmnt">
                 <p style="margin: 0;">Comment</p>
             </div>
-            <div style="display: flex;">
+            <div style="display: flex; cursor: pointer;">
                 <img height="25px" src="./images/share-logo.jpg" alt="share">
                 <p style="margin: 0;">Share</p>
             </div>
