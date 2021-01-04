@@ -30,6 +30,12 @@ header input {
 
 .basic-info {
     background-color: white;
+    padding-bottom: 10px;
+}
+
+.end-hr {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
 }
 
 .basic-info button {
@@ -123,3 +129,4 @@ footer {
     text-decoration: none; 
     color: gray;
 }
+
