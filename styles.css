@@ -58,7 +58,7 @@ header input {
 
 .post-img {
     margin: 0 auto;
-    justify-self: auto;
+    justify-content: center;
     text-align: center;
 
 }
