@@ -45,7 +45,12 @@ header input {
     background-color: white;
     color: blue;
     padding: .2em .7em;
+    cursor: pointer;
 }
+
+.basic-info button:hover{background-color: #c0c0c0;}
+
+
 
 .employer-number {
     display: flex;
@@ -68,11 +73,19 @@ header input {
 }
 
 .post-img {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
 
+.post-img img {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .site-link {
