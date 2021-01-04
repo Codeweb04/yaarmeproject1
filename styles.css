@@ -6,7 +6,7 @@ html, body{
 header {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position:sticky;
     top: 0;
 }
@@ -21,11 +21,6 @@ header input {
     background-image: url("./images/background.jpg");
     text-align: center;
 }
-#bg {
-    width: 100%;
-    height: auto;
-}
-
 
 .basic-info button {
     font-size: 1.2em;
