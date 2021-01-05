@@ -9,5 +9,13 @@ function likes() {
 }
 
 function follow(event) {
-    event.target.innerHTML = "Following"
+    if (event.target.innerHTML === "Following") {
+        event.target.innerHTML = "+ Follow"
+        fcount = document.getElementById('follower-count')
+        fcount.innerHTML = Number(fcount.innerHTML) - 2
+    } else
+        event.target.innerHTML = "Following"
+        fcount = document.getElementById('follower-count')
+        fcount.innerHTML = Number(fcount.innerHTML) + 1
+
 }
