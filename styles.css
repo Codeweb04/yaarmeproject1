@@ -148,6 +148,7 @@ footer {
     position: sticky;
     bottom: 0;
     background-color: white;
+    padding-top: 5px;
 }
 
 .footer-container {
